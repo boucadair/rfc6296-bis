@@ -1,0 +1,224 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2023-11-19T01:17:46.156154+00:00",
+  "repo": "buraglio/rfc6296-bis",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOKR0JGs5zM31k",
+      "title": "ICMPv6 error proxy",
+      "url": "https://github.com/buraglio/rfc6296-bis/issues/1",
+      "state": "OPEN",
+      "author": "otroan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "To pass an ICMPv6 error message, the NPTv6 node needs to also translate the embedded IPv6 packet.\r\nThis would be an IPv6 variant of section 4 RFC5508.\r\nI haven't found other documents describing IPv6 NAT ICMP error handling.",
+      "createdAt": "2023-10-09T10:25:01Z",
+      "updatedAt": "2023-10-09T10:25:01Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 3,
+      "id": "I_kwDOKR0JGs5zOwPS",
+      "title": "Review section 5.3 on future work",
+      "url": "https://github.com/buraglio/rfc6296-bis/issues/3",
+      "state": "OPEN",
+      "author": "otroan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Consider if a mechanism to get the outside address can be specified?\r\nSome sort of integration with STUN?",
+      "createdAt": "2023-10-09T14:43:27Z",
+      "updatedAt": "2023-10-09T14:43:27Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOKR0JGs5ze_yW",
+      "title": "Recommendations regarding source address selection",
+      "url": "https://github.com/buraglio/rfc6296-bis/issues/4",
+      "state": "OPEN",
+      "author": "otroan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The typical use case for NTPv6 would be an internal network using ULA addressing.\r\nShould we ensure that SAS / Happy eyeballs give ULA -> GUA connections a decent chance? Consider them equivalent to IPv4 RFC1918 to global?\r\nDon't know if this is text in this document, or if we should try to affect the SAS bis document?",
+      "createdAt": "2023-10-11T11:09:35Z",
+      "updatedAt": "2023-10-11T15:06:56Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "buraglio",
+          "authorAssociation": "OWNER",
+          "body": "I just sent mail requesting WGLC for the 6724 update that sets preference for IPv4 below all IPv6, including ULA. I think that would cover the SAS in question here. There is significant appetite for fixing that based on the list discussion and the IETF 117 presentation. ",
+          "createdAt": "2023-10-11T15:06:55Z",
+          "updatedAt": "2023-10-11T15:06:55Z"
+        }
+      ]
+    }
+  ],
+  "pulls": [
+    {
+      "number": 2,
+      "id": "PR_kwDOKR0JGs5cPwNJ",
+      "title": "Tweaks to make kramdown-rfc compile",
+      "url": "https://github.com/buraglio/rfc6296-bis/pull/2",
+      "state": "MERGED",
+      "author": "otroan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Signed-off-by: Ole Troan <otroan@cisco.com>\n",
+      "createdAt": "2023-10-09T11:04:02Z",
+      "updatedAt": "2023-10-10T12:24:15Z",
+      "baseRepository": "buraglio/rfc6296-bis",
+      "baseRefName": "main",
+      "baseRefOid": "9b59a3bbe0767c345688a778e7d56176401d81d6",
+      "headRepository": "otroan/rfc6296-bis",
+      "headRefName": "main",
+      "headRefOid": "5adb6055825171d35f0cba99a367e87fb69846bf",
+      "closedAt": "2023-10-10T12:24:15Z",
+      "mergedAt": "2023-10-10T12:24:15Z",
+      "mergedBy": "buraglio",
+      "mergeCommit": {
+        "oid": "63a022621971a9dcbb08402666bd54afe3af90a8"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDOKR0JGs5fA6Ir",
+      "title": "Adding authors, integrating errata",
+      "url": "https://github.com/buraglio/rfc6296-bis/pull/5",
+      "state": "MERGED",
+      "author": "otroan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "- Add co-authors\n- Integrate Errata ID: 3033\n",
+      "createdAt": "2023-11-09T09:47:55Z",
+      "updatedAt": "2023-11-09T16:24:15Z",
+      "baseRepository": "buraglio/rfc6296-bis",
+      "baseRefName": "main",
+      "baseRefOid": "39b24696b2c60bb4b8a6c92b73f70b63d8bfb4de",
+      "headRepository": "otroan/rfc6296-bis",
+      "headRefName": "rev01",
+      "headRefOid": "a33e6b6efbe64f95912c57a064de0330bbbcca5c",
+      "closedAt": "2023-11-09T16:24:14Z",
+      "mergedAt": "2023-11-09T16:24:14Z",
+      "mergedBy": "buraglio",
+      "mergeCommit": {
+        "oid": "c195ae6ff25e9985eaf026a1d13961b81fd2f331"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 6,
+      "id": "PR_kwDOKR0JGs5fC8c1",
+      "title": "ICMPv6 error forwarding",
+      "url": "https://github.com/buraglio/rfc6296-bis/pull/6",
+      "state": "MERGED",
+      "author": "otroan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "- Add co-authors\n- Integrate Errata ID: 3033\n- First go at ICMPv6 error handling\n",
+      "createdAt": "2023-11-09T15:13:24Z",
+      "updatedAt": "2023-11-09T16:24:51Z",
+      "baseRepository": "buraglio/rfc6296-bis",
+      "baseRefName": "main",
+      "baseRefOid": "39b24696b2c60bb4b8a6c92b73f70b63d8bfb4de",
+      "headRepository": "otroan/rfc6296-bis",
+      "headRefName": "icmperror",
+      "headRefOid": "a0ed57fb2262244b4edfbc9dda7866c06b618870",
+      "closedAt": "2023-11-09T16:24:50Z",
+      "mergedAt": "2023-11-09T16:24:50Z",
+      "mergedBy": "buraglio",
+      "mergeCommit": {
+        "oid": "e0b5c55d34ce874f17779bb1e60628fe8096c337"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 7,
+      "id": "PR_kwDOKR0JGs5fDCCA",
+      "title": "Use informative/normative embedded markdown references",
+      "url": "https://github.com/buraglio/rfc6296-bis/pull/7",
+      "state": "MERGED",
+      "author": "otroan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "- Add co-authors\n- Integrate Errata ID: 3033\n- First go at ICMPv6 error handling\n",
+      "createdAt": "2023-11-09T15:25:33Z",
+      "updatedAt": "2023-11-09T16:24:53Z",
+      "baseRepository": "buraglio/rfc6296-bis",
+      "baseRefName": "main",
+      "baseRefOid": "39b24696b2c60bb4b8a6c92b73f70b63d8bfb4de",
+      "headRepository": "otroan/rfc6296-bis",
+      "headRefName": "references",
+      "headRefOid": "a0ed57fb2262244b4edfbc9dda7866c06b618870",
+      "closedAt": "2023-11-09T16:24:53Z",
+      "mergedAt": "2023-11-09T16:24:53Z",
+      "mergedBy": "buraglio",
+      "mergeCommit": {
+        "oid": "e0b5c55d34ce874f17779bb1e60628fe8096c337"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
