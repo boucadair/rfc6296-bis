@@ -28,13 +28,13 @@ at the network layer.
     intervaltree 3.1.0
     Jinja2 3.1.2
     lxml 4.9.3
-    platformdirs 3.11.0
+    platformdirs 4.0.0
     pycountry 22.3.5
     PyYAML 6.0
     requests 2.31.0
     setuptools 67.7.2
     six 1.16.0
-    wcwidth 0.2.9
+    wcwidth 0.2.10
 -->
 <link href="draft-bctb-6man-rfc6296-bis.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -1037,7 +1037,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Wasserman, et al.</td>
-<td class="center">Expires 12 May 2024</td>
+<td class="center">Expires 25 May 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1053,12 +1053,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="https://www.rfc-editor.org/rfc/rfc6296" class="eref">6296</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-11-09" class="published">9 November 2023</time>
+<time datetime="2023-11-22" class="published">22 November 2023</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
-<dd class="intended-status">Standards Track</dd>
+<dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-05-12">12 May 2024</time></dd>
+<dd class="expires"><time datetime="2024-05-25">25 May 2024</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1117,7 +1117,7 @@ at the network layer.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 12 May 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 25 May 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -2055,7 +2055,7 @@ They are then zero-extended to /64 for the purposes of a calculation.
     NPTv6 Translator implements hairpinning (Section 4.3), it suffices
     for applications to always use their external addresses.  However,
     this creates inefficiencies in the local network and may also
-    complicate implementation of the NPTv6 Translator.  <span>[<a href="#RFC3484" class="cite xref">RFC3484</a>]</span> also
+    complicate implementation of the NPTv6 Translator.  <span>[<a href="#RFC6724" class="cite xref">RFC6724</a>]</span> also
     would prefer the private address in such a case in order to reduce
     those inefficiencies.<a href="#section-5-3.3.1" class="pilcrow">¶</a></p>
 </li>
@@ -2244,21 +2244,21 @@ To some extent, the incidence of these difficulties can be reduced by
 <a href="#section-9.1" class="section-number selfRef">9.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
         </h3>
 <dl class="references">
-<dt id="RFC2119">[RFC2119]</dt>
-        <dd>
-<span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"Key words for use in RFCs to Indicate Requirement Levels"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 2119</span>, <span class="seriesInfo">DOI 10.17487/RFC2119</span>, <time datetime="1997-03" class="refDate">March 1997</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC2526">[RFC2526]</dt>
-        <dd>
-<span class="refAuthor">Johnson, D.</span> and <span class="refAuthor">S. Deering</span>, <span class="refTitle">"Reserved IPv6 Subnet Anycast Addresses"</span>, <span class="seriesInfo">RFC 2526</span>, <span class="seriesInfo">DOI 10.17487/RFC2526</span>, <time datetime="1999-03" class="refDate">March 1999</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2526">https://www.rfc-editor.org/info/rfc2526</a>&gt;</span>. </dd>
-<dd class="break"></dd>
 <dt id="RFC4193">[RFC4193]</dt>
         <dd>
 <span class="refAuthor">Hinden, R.</span> and <span class="refAuthor">B. Haberman</span>, <span class="refTitle">"Unique Local IPv6 Unicast Addresses"</span>, <span class="seriesInfo">RFC 4193</span>, <span class="seriesInfo">DOI 10.17487/RFC4193</span>, <time datetime="2005-10" class="refDate">October 2005</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc4193">https://www.rfc-editor.org/info/rfc4193</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="RFC2119">[RFC2119]</dt>
+        <dd>
+<span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"Key words for use in RFCs to Indicate Requirement Levels"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 2119</span>, <span class="seriesInfo">DOI 10.17487/RFC2119</span>, <time datetime="1997-03" class="refDate">March 1997</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="RFC4291">[RFC4291]</dt>
         <dd>
 <span class="refAuthor">Hinden, R.</span> and <span class="refAuthor">S. Deering</span>, <span class="refTitle">"IP Version 6 Addressing Architecture"</span>, <span class="seriesInfo">RFC 4291</span>, <span class="seriesInfo">DOI 10.17487/RFC4291</span>, <time datetime="2006-02" class="refDate">February 2006</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc4291">https://www.rfc-editor.org/info/rfc4291</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC2526">[RFC2526]</dt>
+        <dd>
+<span class="refAuthor">Johnson, D.</span> and <span class="refAuthor">S. Deering</span>, <span class="refTitle">"Reserved IPv6 Subnet Anycast Addresses"</span>, <span class="seriesInfo">RFC 2526</span>, <span class="seriesInfo">DOI 10.17487/RFC2526</span>, <time datetime="1999-03" class="refDate">March 1999</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2526">https://www.rfc-editor.org/info/rfc2526</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC4443">[RFC4443]</dt>
         <dd>
@@ -2289,37 +2289,53 @@ To some extent, the incidence of these difficulties can be reduced by
         <dd>
 <span class="refAuthor">Braden, R.</span>, <span class="refAuthor">Borman, D.</span>, and <span class="refAuthor">C. Partridge</span>, <span class="refTitle">"Computing the Internet checksum"</span>, <span class="seriesInfo">RFC 1071</span>, <span class="seriesInfo">DOI 10.17487/RFC1071</span>, <time datetime="1988-09" class="refDate">September 1988</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc1071">https://www.rfc-editor.org/info/rfc1071</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="RFC1624">[RFC1624]</dt>
-        <dd>
-<span class="refAuthor">Rijsinghani, A., Ed.</span>, <span class="refTitle">"Computation of the Internet Checksum via Incremental Update"</span>, <span class="seriesInfo">RFC 1624</span>, <span class="seriesInfo">DOI 10.17487/RFC1624</span>, <time datetime="1994-05" class="refDate">May 1994</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc1624">https://www.rfc-editor.org/info/rfc1624</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC1918">[RFC1918]</dt>
-        <dd>
-<span class="refAuthor">Rekhter, Y.</span>, <span class="refAuthor">Moskowitz, B.</span>, <span class="refAuthor">Karrenberg, D.</span>, <span class="refAuthor">de Groot, G. J.</span>, and <span class="refAuthor">E. Lear</span>, <span class="refTitle">"Address Allocation for Private Internets"</span>, <span class="seriesInfo">BCP 5</span>, <span class="seriesInfo">RFC 1918</span>, <span class="seriesInfo">DOI 10.17487/RFC1918</span>, <time datetime="1996-02" class="refDate">February 1996</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc1918">https://www.rfc-editor.org/info/rfc1918</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC2827">[RFC2827]</dt>
-        <dd>
-<span class="refAuthor">Ferguson, P.</span> and <span class="refAuthor">D. Senie</span>, <span class="refTitle">"Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing"</span>, <span class="seriesInfo">BCP 38</span>, <span class="seriesInfo">RFC 2827</span>, <span class="seriesInfo">DOI 10.17487/RFC2827</span>, <time datetime="2000-05" class="refDate">May 2000</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2827">https://www.rfc-editor.org/info/rfc2827</a>&gt;</span>. </dd>
-<dd class="break"></dd>
 <dt id="RFC2993">[RFC2993]</dt>
         <dd>
 <span class="refAuthor">Hain, T.</span>, <span class="refTitle">"Architectural Implications of NAT"</span>, <span class="seriesInfo">RFC 2993</span>, <span class="seriesInfo">DOI 10.17487/RFC2993</span>, <time datetime="2000-11" class="refDate">November 2000</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2993">https://www.rfc-editor.org/info/rfc2993</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC3424">[RFC3424]</dt>
-        <dd>
-<span class="refAuthor">Daigle, L., Ed.</span> and <span class="refAuthor">IAB</span>, <span class="refTitle">"IAB Considerations for UNilateral Self-Address Fixing (UNSAF) Across Network Address Translation"</span>, <span class="seriesInfo">RFC 3424</span>, <span class="seriesInfo">DOI 10.17487/RFC3424</span>, <time datetime="2002-11" class="refDate">November 2002</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc3424">https://www.rfc-editor.org/info/rfc3424</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC3484">[RFC3484]</dt>
-        <dd>
-<span class="refAuthor">Draves, R.</span>, <span class="refTitle">"Default Address Selection for Internet Protocol version 6 (IPv6)"</span>, <span class="seriesInfo">RFC 3484</span>, <span class="seriesInfo">DOI 10.17487/RFC3484</span>, <time datetime="2003-02" class="refDate">February 2003</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc3484">https://www.rfc-editor.org/info/rfc3484</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC4864">[RFC4864]</dt>
         <dd>
 <span class="refAuthor">Van de Velde, G.</span>, <span class="refAuthor">Hain, T.</span>, <span class="refAuthor">Droms, R.</span>, <span class="refAuthor">Carpenter, B.</span>, and <span class="refAuthor">E. Klein</span>, <span class="refTitle">"Local Network Protection for IPv6"</span>, <span class="seriesInfo">RFC 4864</span>, <span class="seriesInfo">DOI 10.17487/RFC4864</span>, <time datetime="2007-05" class="refDate">May 2007</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc4864">https://www.rfc-editor.org/info/rfc4864</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="RFC5245">[RFC5245]</dt>
+<dt id="RFC5902">[RFC5902]</dt>
         <dd>
-<span class="refAuthor">Rosenberg, J.</span>, <span class="refTitle">"Interactive Connectivity Establishment (ICE): A Protocol for Network Address Translator (NAT) Traversal for Offer/Answer Protocols"</span>, <span class="seriesInfo">RFC 5245</span>, <span class="seriesInfo">DOI 10.17487/RFC5245</span>, <time datetime="2010-04" class="refDate">April 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5245">https://www.rfc-editor.org/info/rfc5245</a>&gt;</span>. </dd>
+<span class="refAuthor">Thaler, D.</span>, <span class="refAuthor">Zhang, L.</span>, and <span class="refAuthor">G. Lebovitz</span>, <span class="refTitle">"IAB Thoughts on IPv6 Network Address Translation"</span>, <span class="seriesInfo">RFC 5902</span>, <span class="seriesInfo">DOI 10.17487/RFC5902</span>, <time datetime="2010-07" class="refDate">July 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5902">https://www.rfc-editor.org/info/rfc5902</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC6092">[RFC6092]</dt>
+        <dd>
+<span class="refAuthor">Woodyatt, J., Ed.</span>, <span class="refTitle">"Recommended Simple Security Capabilities in Customer Premises Equipment (CPE) for Providing Residential IPv6 Internet Service"</span>, <span class="seriesInfo">RFC 6092</span>, <span class="seriesInfo">DOI 10.17487/RFC6092</span>, <time datetime="2011-01" class="refDate">January 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6092">https://www.rfc-editor.org/info/rfc6092</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC5925">[RFC5925]</dt>
+        <dd>
+<span class="refAuthor">Touch, J.</span>, <span class="refAuthor">Mankin, A.</span>, and <span class="refAuthor">R. Bonica</span>, <span class="refTitle">"The TCP Authentication Option"</span>, <span class="seriesInfo">RFC 5925</span>, <span class="seriesInfo">DOI 10.17487/RFC5925</span>, <time datetime="2010-06" class="refDate">June 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5925">https://www.rfc-editor.org/info/rfc5925</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC3424">[RFC3424]</dt>
+        <dd>
+<span class="refAuthor">Daigle, L., Ed.</span> and <span class="refAuthor">IAB</span>, <span class="refTitle">"IAB Considerations for UNilateral Self-Address Fixing (UNSAF) Across Network Address Translation"</span>, <span class="seriesInfo">RFC 3424</span>, <span class="seriesInfo">DOI 10.17487/RFC3424</span>, <time datetime="2002-11" class="refDate">November 2002</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc3424">https://www.rfc-editor.org/info/rfc3424</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC5996">[RFC5996]</dt>
+        <dd>
+<span class="refAuthor">Kaufman, C.</span>, <span class="refAuthor">Hoffman, P.</span>, <span class="refAuthor">Nir, Y.</span>, and <span class="refAuthor">P. Eronen</span>, <span class="refTitle">"Internet Key Exchange Protocol Version 2 (IKEv2)"</span>, <span class="seriesInfo">RFC 5996</span>, <span class="seriesInfo">DOI 10.17487/RFC5996</span>, <time datetime="2010-09" class="refDate">September 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5996">https://www.rfc-editor.org/info/rfc5996</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC2827">[RFC2827]</dt>
+        <dd>
+<span class="refAuthor">Ferguson, P.</span> and <span class="refAuthor">D. Senie</span>, <span class="refTitle">"Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing"</span>, <span class="seriesInfo">BCP 38</span>, <span class="seriesInfo">RFC 2827</span>, <span class="seriesInfo">DOI 10.17487/RFC2827</span>, <time datetime="2000-05" class="refDate">May 2000</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2827">https://www.rfc-editor.org/info/rfc2827</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC1624">[RFC1624]</dt>
+        <dd>
+<span class="refAuthor">Rijsinghani, A., Ed.</span>, <span class="refTitle">"Computation of the Internet Checksum via Incremental Update"</span>, <span class="seriesInfo">RFC 1624</span>, <span class="seriesInfo">DOI 10.17487/RFC1624</span>, <time datetime="1994-05" class="refDate">May 1994</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc1624">https://www.rfc-editor.org/info/rfc1624</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC5508">[RFC5508]</dt>
+        <dd>
+<span class="refAuthor">Srisuresh, P.</span>, <span class="refAuthor">Ford, B.</span>, <span class="refAuthor">Sivakumar, S.</span>, and <span class="refAuthor">S. Guha</span>, <span class="refTitle">"NAT Behavioral Requirements for ICMP"</span>, <span class="seriesInfo">BCP 148</span>, <span class="seriesInfo">RFC 5508</span>, <span class="seriesInfo">DOI 10.17487/RFC5508</span>, <time datetime="2009-04" class="refDate">April 2009</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5508">https://www.rfc-editor.org/info/rfc5508</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC6204">[RFC6204]</dt>
+        <dd>
+<span class="refAuthor">Singh, H.</span>, <span class="refAuthor">Beebee, W.</span>, <span class="refAuthor">Donley, C.</span>, <span class="refAuthor">Stark, B.</span>, and <span class="refAuthor">O. Troan, Ed.</span>, <span class="refTitle">"Basic Requirements for IPv6 Customer Edge Routers"</span>, <span class="seriesInfo">RFC 6204</span>, <span class="seriesInfo">DOI 10.17487/RFC6204</span>, <time datetime="2011-04" class="refDate">April 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6204">https://www.rfc-editor.org/info/rfc6204</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC6724">[RFC6724]</dt>
+        <dd>
+<span class="refAuthor">Thaler, D., Ed.</span>, <span class="refAuthor">Draves, R.</span>, <span class="refAuthor">Matsumoto, A.</span>, and <span class="refAuthor">T. Chown</span>, <span class="refTitle">"Default Address Selection for Internet Protocol Version 6 (IPv6)"</span>, <span class="seriesInfo">RFC 6724</span>, <span class="seriesInfo">DOI 10.17487/RFC6724</span>, <time datetime="2012-09" class="refDate">September 2012</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6724">https://www.rfc-editor.org/info/rfc6724</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC5389">[RFC5389]</dt>
         <dd>
@@ -2329,29 +2345,17 @@ To some extent, the incidence of these difficulties can be reduced by
         <dd>
 <span class="refAuthor">Mahy, R.</span>, <span class="refAuthor">Matthews, P.</span>, and <span class="refAuthor">J. Rosenberg</span>, <span class="refTitle">"Traversal Using Relays around NAT (TURN): Relay Extensions to Session Traversal Utilities for NAT (STUN)"</span>, <span class="seriesInfo">RFC 5766</span>, <span class="seriesInfo">DOI 10.17487/RFC5766</span>, <time datetime="2010-04" class="refDate">April 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5766">https://www.rfc-editor.org/info/rfc5766</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="RFC5902">[RFC5902]</dt>
+<dt id="RFC5245">[RFC5245]</dt>
         <dd>
-<span class="refAuthor">Thaler, D.</span>, <span class="refAuthor">Zhang, L.</span>, and <span class="refAuthor">G. Lebovitz</span>, <span class="refTitle">"IAB Thoughts on IPv6 Network Address Translation"</span>, <span class="seriesInfo">RFC 5902</span>, <span class="seriesInfo">DOI 10.17487/RFC5902</span>, <time datetime="2010-07" class="refDate">July 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5902">https://www.rfc-editor.org/info/rfc5902</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC5925">[RFC5925]</dt>
-        <dd>
-<span class="refAuthor">Touch, J.</span>, <span class="refAuthor">Mankin, A.</span>, and <span class="refAuthor">R. Bonica</span>, <span class="refTitle">"The TCP Authentication Option"</span>, <span class="seriesInfo">RFC 5925</span>, <span class="seriesInfo">DOI 10.17487/RFC5925</span>, <time datetime="2010-06" class="refDate">June 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5925">https://www.rfc-editor.org/info/rfc5925</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC5996">[RFC5996]</dt>
-        <dd>
-<span class="refAuthor">Kaufman, C.</span>, <span class="refAuthor">Hoffman, P.</span>, <span class="refAuthor">Nir, Y.</span>, and <span class="refAuthor">P. Eronen</span>, <span class="refTitle">"Internet Key Exchange Protocol Version 2 (IKEv2)"</span>, <span class="seriesInfo">RFC 5996</span>, <span class="seriesInfo">DOI 10.17487/RFC5996</span>, <time datetime="2010-09" class="refDate">September 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5996">https://www.rfc-editor.org/info/rfc5996</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC6052">[RFC6052]</dt>
-        <dd>
-<span class="refAuthor">Bao, C.</span>, <span class="refAuthor">Huitema, C.</span>, <span class="refAuthor">Bagnulo, M.</span>, <span class="refAuthor">Boucadair, M.</span>, and <span class="refAuthor">X. Li</span>, <span class="refTitle">"IPv6 Addressing of IPv4/IPv6 Translators"</span>, <span class="seriesInfo">RFC 6052</span>, <span class="seriesInfo">DOI 10.17487/RFC6052</span>, <time datetime="2010-10" class="refDate">October 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6052">https://www.rfc-editor.org/info/rfc6052</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC6092">[RFC6092]</dt>
-        <dd>
-<span class="refAuthor">Woodyatt, J., Ed.</span>, <span class="refTitle">"Recommended Simple Security Capabilities in Customer Premises Equipment (CPE) for Providing Residential IPv6 Internet Service"</span>, <span class="seriesInfo">RFC 6092</span>, <span class="seriesInfo">DOI 10.17487/RFC6092</span>, <time datetime="2011-01" class="refDate">January 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6092">https://www.rfc-editor.org/info/rfc6092</a>&gt;</span>. </dd>
+<span class="refAuthor">Rosenberg, J.</span>, <span class="refTitle">"Interactive Connectivity Establishment (ICE): A Protocol for Network Address Translator (NAT) Traversal for Offer/Answer Protocols"</span>, <span class="seriesInfo">RFC 5245</span>, <span class="seriesInfo">DOI 10.17487/RFC5245</span>, <time datetime="2010-04" class="refDate">April 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5245">https://www.rfc-editor.org/info/rfc5245</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC6144">[RFC6144]</dt>
         <dd>
 <span class="refAuthor">Baker, F.</span>, <span class="refAuthor">Li, X.</span>, <span class="refAuthor">Bao, C.</span>, and <span class="refAuthor">K. Yin</span>, <span class="refTitle">"Framework for IPv4/IPv6 Translation"</span>, <span class="seriesInfo">RFC 6144</span>, <span class="seriesInfo">DOI 10.17487/RFC6144</span>, <time datetime="2011-04" class="refDate">April 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6144">https://www.rfc-editor.org/info/rfc6144</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC6147">[RFC6147]</dt>
+        <dd>
+<span class="refAuthor">Bagnulo, M.</span>, <span class="refAuthor">Sullivan, A.</span>, <span class="refAuthor">Matthews, P.</span>, and <span class="refAuthor">I. van Beijnum</span>, <span class="refTitle">"DNS64: DNS Extensions for Network Address Translation from IPv6 Clients to IPv4 Servers"</span>, <span class="seriesInfo">RFC 6147</span>, <span class="seriesInfo">DOI 10.17487/RFC6147</span>, <time datetime="2011-04" class="refDate">April 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6147">https://www.rfc-editor.org/info/rfc6147</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC6145">[RFC6145]</dt>
         <dd>
@@ -2361,17 +2365,13 @@ To some extent, the incidence of these difficulties can be reduced by
         <dd>
 <span class="refAuthor">Bagnulo, M.</span>, <span class="refAuthor">Matthews, P.</span>, and <span class="refAuthor">I. van Beijnum</span>, <span class="refTitle">"Stateful NAT64: Network Address and Protocol Translation from IPv6 Clients to IPv4 Servers"</span>, <span class="seriesInfo">RFC 6146</span>, <span class="seriesInfo">DOI 10.17487/RFC6146</span>, <time datetime="2011-04" class="refDate">April 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6146">https://www.rfc-editor.org/info/rfc6146</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="RFC6147">[RFC6147]</dt>
+<dt id="RFC6052">[RFC6052]</dt>
         <dd>
-<span class="refAuthor">Bagnulo, M.</span>, <span class="refAuthor">Sullivan, A.</span>, <span class="refAuthor">Matthews, P.</span>, and <span class="refAuthor">I. van Beijnum</span>, <span class="refTitle">"DNS64: DNS Extensions for Network Address Translation from IPv6 Clients to IPv4 Servers"</span>, <span class="seriesInfo">RFC 6147</span>, <span class="seriesInfo">DOI 10.17487/RFC6147</span>, <time datetime="2011-04" class="refDate">April 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6147">https://www.rfc-editor.org/info/rfc6147</a>&gt;</span>. </dd>
+<span class="refAuthor">Bao, C.</span>, <span class="refAuthor">Huitema, C.</span>, <span class="refAuthor">Bagnulo, M.</span>, <span class="refAuthor">Boucadair, M.</span>, and <span class="refAuthor">X. Li</span>, <span class="refTitle">"IPv6 Addressing of IPv4/IPv6 Translators"</span>, <span class="seriesInfo">RFC 6052</span>, <span class="seriesInfo">DOI 10.17487/RFC6052</span>, <time datetime="2010-10" class="refDate">October 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6052">https://www.rfc-editor.org/info/rfc6052</a>&gt;</span>. </dd>
 <dd class="break"></dd>
-<dt id="RFC6204">[RFC6204]</dt>
-        <dd>
-<span class="refAuthor">Singh, H.</span>, <span class="refAuthor">Beebee, W.</span>, <span class="refAuthor">Donley, C.</span>, <span class="refAuthor">Stark, B.</span>, and <span class="refAuthor">O. Troan, Ed.</span>, <span class="refTitle">"Basic Requirements for IPv6 Customer Edge Routers"</span>, <span class="seriesInfo">RFC 6204</span>, <span class="seriesInfo">DOI 10.17487/RFC6204</span>, <time datetime="2011-04" class="refDate">April 2011</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6204">https://www.rfc-editor.org/info/rfc6204</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC5508">[RFC5508]</dt>
+<dt id="RFC1918">[RFC1918]</dt>
       <dd>
-<span class="refAuthor">Srisuresh, P.</span>, <span class="refAuthor">Ford, B.</span>, <span class="refAuthor">Sivakumar, S.</span>, and <span class="refAuthor">S. Guha</span>, <span class="refTitle">"NAT Behavioral Requirements for ICMP"</span>, <span class="seriesInfo">BCP 148</span>, <span class="seriesInfo">RFC 5508</span>, <span class="seriesInfo">DOI 10.17487/RFC5508</span>, <time datetime="2009-04" class="refDate">April 2009</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5508">https://www.rfc-editor.org/info/rfc5508</a>&gt;</span>. </dd>
+<span class="refAuthor">Rekhter, Y.</span>, <span class="refAuthor">Moskowitz, B.</span>, <span class="refAuthor">Karrenberg, D.</span>, <span class="refAuthor">de Groot, G. J.</span>, and <span class="refAuthor">E. Lear</span>, <span class="refTitle">"Address Allocation for Private Internets"</span>, <span class="seriesInfo">BCP 5</span>, <span class="seriesInfo">RFC 1918</span>, <span class="seriesInfo">DOI 10.17487/RFC1918</span>, <time datetime="1996-02" class="refDate">February 1996</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc1918">https://www.rfc-editor.org/info/rfc1918</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>

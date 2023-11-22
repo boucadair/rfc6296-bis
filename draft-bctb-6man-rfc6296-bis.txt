@@ -5,11 +5,11 @@
 6MAN                                                        M. Wasserman
 Internet-Draft                                         Painless Security
 Updates: 6296 (if approved)                                     F. Baker
-Intended status: Standards Track                                O. Troan
-Expires: 12 May 2024                                       Cisco Systems
+Intended status: Informational                                  O. Troan
+Expires: 25 May 2024                                       Cisco Systems
                                                              N. Buraglio
                                                  Energy Sciences Network
-                                                         9 November 2023
+                                                        22 November 2023
 
 
           RFC 6296bis IPv6-to-IPv6 Network Prefix Translation
@@ -46,7 +46,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 12 May 2024.
+   This Internet-Draft will expire on 25 May 2024.
 
 Copyright Notice
 
@@ -787,7 +787,7 @@ Table of Contents
       NPTv6 Translator implements hairpinning (Section 4.3), it suffices
       for applications to always use their external addresses.  However,
       this creates inefficiencies in the local network and may also
-      complicate implementation of the NPTv6 Translator.  [RFC3484] also
+      complicate implementation of the NPTv6 Translator.  [RFC6724] also
       would prefer the private address in such a case in order to reduce
       those inefficiencies.
 
@@ -946,22 +946,22 @@ Table of Contents
 
 9.1.  Normative References
 
+   [RFC4193]  Hinden, R. and B. Haberman, "Unique Local IPv6 Unicast
+              Addresses", RFC 4193, DOI 10.17487/RFC4193, October 2005,
+              <https://www.rfc-editor.org/info/rfc4193>.
+
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
-   [RFC2526]  Johnson, D. and S. Deering, "Reserved IPv6 Subnet Anycast
-              Addresses", RFC 2526, DOI 10.17487/RFC2526, March 1999,
-              <https://www.rfc-editor.org/info/rfc2526>.
-
-   [RFC4193]  Hinden, R. and B. Haberman, "Unique Local IPv6 Unicast
-              Addresses", RFC 4193, DOI 10.17487/RFC4193, October 2005,
-              <https://www.rfc-editor.org/info/rfc4193>.
-
    [RFC4291]  Hinden, R. and S. Deering, "IP Version 6 Addressing
               Architecture", RFC 4291, DOI 10.17487/RFC4291, February
               2006, <https://www.rfc-editor.org/info/rfc4291>.
+
+   [RFC2526]  Johnson, D. and S. Deering, "Reserved IPv6 Subnet Anycast
+              Addresses", RFC 2526, DOI 10.17487/RFC2526, March 1999,
+              <https://www.rfc-editor.org/info/rfc2526>.
 
    [RFC4443]  Conta, A., Deering, S., and M. Gupta, Ed., "Internet
               Control Message Protocol (ICMPv6) for the Internet
@@ -986,45 +986,64 @@ Table of Contents
               Internet checksum", RFC 1071, DOI 10.17487/RFC1071,
               September 1988, <https://www.rfc-editor.org/info/rfc1071>.
 
-   [RFC1624]  Rijsinghani, A., Ed., "Computation of the Internet
-              Checksum via Incremental Update", RFC 1624,
-              DOI 10.17487/RFC1624, May 1994,
-              <https://www.rfc-editor.org/info/rfc1624>.
-
-   [RFC1918]  Rekhter, Y., Moskowitz, B., Karrenberg, D., de Groot, G.
-              J., and E. Lear, "Address Allocation for Private
-              Internets", BCP 5, RFC 1918, DOI 10.17487/RFC1918,
-              February 1996, <https://www.rfc-editor.org/info/rfc1918>.
-
-   [RFC2827]  Ferguson, P. and D. Senie, "Network Ingress Filtering:
-              Defeating Denial of Service Attacks which employ IP Source
-              Address Spoofing", BCP 38, RFC 2827, DOI 10.17487/RFC2827,
-              May 2000, <https://www.rfc-editor.org/info/rfc2827>.
-
    [RFC2993]  Hain, T., "Architectural Implications of NAT", RFC 2993,
               DOI 10.17487/RFC2993, November 2000,
               <https://www.rfc-editor.org/info/rfc2993>.
-
-   [RFC3424]  Daigle, L., Ed. and IAB, "IAB Considerations for
-              UNilateral Self-Address Fixing (UNSAF) Across Network
-              Address Translation", RFC 3424, DOI 10.17487/RFC3424,
-              November 2002, <https://www.rfc-editor.org/info/rfc3424>.
-
-   [RFC3484]  Draves, R., "Default Address Selection for Internet
-              Protocol version 6 (IPv6)", RFC 3484,
-              DOI 10.17487/RFC3484, February 2003,
-              <https://www.rfc-editor.org/info/rfc3484>.
 
    [RFC4864]  Van de Velde, G., Hain, T., Droms, R., Carpenter, B., and
               E. Klein, "Local Network Protection for IPv6", RFC 4864,
               DOI 10.17487/RFC4864, May 2007,
               <https://www.rfc-editor.org/info/rfc4864>.
 
-   [RFC5245]  Rosenberg, J., "Interactive Connectivity Establishment
-              (ICE): A Protocol for Network Address Translator (NAT)
-              Traversal for Offer/Answer Protocols", RFC 5245,
-              DOI 10.17487/RFC5245, April 2010,
-              <https://www.rfc-editor.org/info/rfc5245>.
+   [RFC5902]  Thaler, D., Zhang, L., and G. Lebovitz, "IAB Thoughts on
+              IPv6 Network Address Translation", RFC 5902,
+              DOI 10.17487/RFC5902, July 2010,
+              <https://www.rfc-editor.org/info/rfc5902>.
+
+   [RFC6092]  Woodyatt, J., Ed., "Recommended Simple Security
+              Capabilities in Customer Premises Equipment (CPE) for
+              Providing Residential IPv6 Internet Service", RFC 6092,
+              DOI 10.17487/RFC6092, January 2011,
+              <https://www.rfc-editor.org/info/rfc6092>.
+
+   [RFC5925]  Touch, J., Mankin, A., and R. Bonica, "The TCP
+              Authentication Option", RFC 5925, DOI 10.17487/RFC5925,
+              June 2010, <https://www.rfc-editor.org/info/rfc5925>.
+
+   [RFC3424]  Daigle, L., Ed. and IAB, "IAB Considerations for
+              UNilateral Self-Address Fixing (UNSAF) Across Network
+              Address Translation", RFC 3424, DOI 10.17487/RFC3424,
+              November 2002, <https://www.rfc-editor.org/info/rfc3424>.
+
+   [RFC5996]  Kaufman, C., Hoffman, P., Nir, Y., and P. Eronen,
+              "Internet Key Exchange Protocol Version 2 (IKEv2)",
+              RFC 5996, DOI 10.17487/RFC5996, September 2010,
+              <https://www.rfc-editor.org/info/rfc5996>.
+
+   [RFC2827]  Ferguson, P. and D. Senie, "Network Ingress Filtering:
+              Defeating Denial of Service Attacks which employ IP Source
+              Address Spoofing", BCP 38, RFC 2827, DOI 10.17487/RFC2827,
+              May 2000, <https://www.rfc-editor.org/info/rfc2827>.
+
+   [RFC1624]  Rijsinghani, A., Ed., "Computation of the Internet
+              Checksum via Incremental Update", RFC 1624,
+              DOI 10.17487/RFC1624, May 1994,
+              <https://www.rfc-editor.org/info/rfc1624>.
+
+   [RFC5508]  Srisuresh, P., Ford, B., Sivakumar, S., and S. Guha, "NAT
+              Behavioral Requirements for ICMP", BCP 148, RFC 5508,
+              DOI 10.17487/RFC5508, April 2009,
+              <https://www.rfc-editor.org/info/rfc5508>.
+
+   [RFC6204]  Singh, H., Beebee, W., Donley, C., Stark, B., and O.
+              Troan, Ed., "Basic Requirements for IPv6 Customer Edge
+              Routers", RFC 6204, DOI 10.17487/RFC6204, April 2011,
+              <https://www.rfc-editor.org/info/rfc6204>.
+
+   [RFC6724]  Thaler, D., Ed., Draves, R., Matsumoto, A., and T. Chown,
+              "Default Address Selection for Internet Protocol Version 6
+              (IPv6)", RFC 6724, DOI 10.17487/RFC6724, September 2012,
+              <https://www.rfc-editor.org/info/rfc6724>.
 
    [RFC5389]  Rosenberg, J., Mahy, R., Matthews, P., and D. Wing,
               "Session Traversal Utilities for NAT (STUN)", RFC 5389,
@@ -1037,34 +1056,21 @@ Table of Contents
               DOI 10.17487/RFC5766, April 2010,
               <https://www.rfc-editor.org/info/rfc5766>.
 
-   [RFC5902]  Thaler, D., Zhang, L., and G. Lebovitz, "IAB Thoughts on
-              IPv6 Network Address Translation", RFC 5902,
-              DOI 10.17487/RFC5902, July 2010,
-              <https://www.rfc-editor.org/info/rfc5902>.
-
-   [RFC5925]  Touch, J., Mankin, A., and R. Bonica, "The TCP
-              Authentication Option", RFC 5925, DOI 10.17487/RFC5925,
-              June 2010, <https://www.rfc-editor.org/info/rfc5925>.
-
-   [RFC5996]  Kaufman, C., Hoffman, P., Nir, Y., and P. Eronen,
-              "Internet Key Exchange Protocol Version 2 (IKEv2)",
-              RFC 5996, DOI 10.17487/RFC5996, September 2010,
-              <https://www.rfc-editor.org/info/rfc5996>.
-
-   [RFC6052]  Bao, C., Huitema, C., Bagnulo, M., Boucadair, M., and X.
-              Li, "IPv6 Addressing of IPv4/IPv6 Translators", RFC 6052,
-              DOI 10.17487/RFC6052, October 2010,
-              <https://www.rfc-editor.org/info/rfc6052>.
-
-   [RFC6092]  Woodyatt, J., Ed., "Recommended Simple Security
-              Capabilities in Customer Premises Equipment (CPE) for
-              Providing Residential IPv6 Internet Service", RFC 6092,
-              DOI 10.17487/RFC6092, January 2011,
-              <https://www.rfc-editor.org/info/rfc6092>.
+   [RFC5245]  Rosenberg, J., "Interactive Connectivity Establishment
+              (ICE): A Protocol for Network Address Translator (NAT)
+              Traversal for Offer/Answer Protocols", RFC 5245,
+              DOI 10.17487/RFC5245, April 2010,
+              <https://www.rfc-editor.org/info/rfc5245>.
 
    [RFC6144]  Baker, F., Li, X., Bao, C., and K. Yin, "Framework for
               IPv4/IPv6 Translation", RFC 6144, DOI 10.17487/RFC6144,
               April 2011, <https://www.rfc-editor.org/info/rfc6144>.
+
+   [RFC6147]  Bagnulo, M., Sullivan, A., Matthews, P., and I. van
+              Beijnum, "DNS64: DNS Extensions for Network Address
+              Translation from IPv6 Clients to IPv4 Servers", RFC 6147,
+              DOI 10.17487/RFC6147, April 2011,
+              <https://www.rfc-editor.org/info/rfc6147>.
 
    [RFC6145]  Li, X., Bao, C., and F. Baker, "IP/ICMP Translation
               Algorithm", RFC 6145, DOI 10.17487/RFC6145, April 2011,
@@ -1075,21 +1081,15 @@ Table of Contents
               Clients to IPv4 Servers", RFC 6146, DOI 10.17487/RFC6146,
               April 2011, <https://www.rfc-editor.org/info/rfc6146>.
 
-   [RFC6147]  Bagnulo, M., Sullivan, A., Matthews, P., and I. van
-              Beijnum, "DNS64: DNS Extensions for Network Address
-              Translation from IPv6 Clients to IPv4 Servers", RFC 6147,
-              DOI 10.17487/RFC6147, April 2011,
-              <https://www.rfc-editor.org/info/rfc6147>.
+   [RFC6052]  Bao, C., Huitema, C., Bagnulo, M., Boucadair, M., and X.
+              Li, "IPv6 Addressing of IPv4/IPv6 Translators", RFC 6052,
+              DOI 10.17487/RFC6052, October 2010,
+              <https://www.rfc-editor.org/info/rfc6052>.
 
-   [RFC6204]  Singh, H., Beebee, W., Donley, C., Stark, B., and O.
-              Troan, Ed., "Basic Requirements for IPv6 Customer Edge
-              Routers", RFC 6204, DOI 10.17487/RFC6204, April 2011,
-              <https://www.rfc-editor.org/info/rfc6204>.
-
-   [RFC5508]  Srisuresh, P., Ford, B., Sivakumar, S., and S. Guha, "NAT
-              Behavioral Requirements for ICMP", BCP 148, RFC 5508,
-              DOI 10.17487/RFC5508, April 2009,
-              <https://www.rfc-editor.org/info/rfc5508>.
+   [RFC1918]  Rekhter, Y., Moskowitz, B., Karrenberg, D., de Groot, G.
+              J., and E. Lear, "Address Allocation for Private
+              Internets", BCP 5, RFC 1918, DOI 10.17487/RFC1918,
+              February 1996, <https://www.rfc-editor.org/info/rfc1918>.
 
 Appendix A.  Why GSE?
 
