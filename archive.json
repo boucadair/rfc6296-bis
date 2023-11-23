@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-11-21T01:15:51.925267+00:00",
+  "timestamp": "2023-11-23T01:12:42.669859+00:00",
   "repo": "buraglio/rfc6296-bis",
   "labels": [
     {
@@ -216,6 +216,34 @@
       "mergedBy": "buraglio",
       "mergeCommit": {
         "oid": "e0b5c55d34ce874f17779bb1e60628fe8096c337"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 8,
+      "id": "PR_kwDOKR0JGs5gGiql",
+      "title": "Inline references",
+      "url": "https://github.com/buraglio/rfc6296-bis/pull/8",
+      "state": "MERGED",
+      "author": "otroan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "- Add co-authors\n- Integrate Errata ID: 3033\n- First go at ICMPv6 error handling\n- inline references\n",
+      "createdAt": "2023-11-22T08:19:33Z",
+      "updatedAt": "2023-11-22T08:23:04Z",
+      "baseRepository": "buraglio/rfc6296-bis",
+      "baseRefName": "main",
+      "baseRefOid": "6f495ac4f6e29d8407c4330ede9f43733cc5e3ae",
+      "headRepository": "otroan/rfc6296-bis",
+      "headRefName": "references",
+      "headRefOid": "e85eae26bbf2115a97d9117b63bf0afea0ffd262",
+      "closedAt": "2023-11-22T08:23:03Z",
+      "mergedAt": "2023-11-22T08:23:03Z",
+      "mergedBy": "otroan",
+      "mergeCommit": {
+        "oid": "05a5e6404d7b61c53ef618967970bea48363855e"
       },
       "comments": [],
       "reviews": []
