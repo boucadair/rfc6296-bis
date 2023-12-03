@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-11-30T01:13:05.923992+00:00",
+  "timestamp": "2023-12-03T01:16:51.466696+00:00",
   "repo": "buraglio/rfc6296-bis",
   "labels": [
     {
@@ -105,6 +105,22 @@
           "updatedAt": "2023-10-11T15:06:55Z"
         }
       ]
+    },
+    {
+      "number": 9,
+      "id": "I_kwDOKR0JGs54fcbi",
+      "title": "Obsoletes not Updates",
+      "url": "https://github.com/buraglio/rfc6296-bis/issues/9",
+      "state": "OPEN",
+      "author": "becarpenter",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "This is a replacement for RFC 6296 so it should be Obsoletes: 6296",
+      "createdAt": "2023-12-01T20:01:56Z",
+      "updatedAt": "2023-12-01T20:02:10Z",
+      "closedAt": null,
+      "comments": []
     }
   ],
   "pulls": [
