@@ -95,11 +95,12 @@ Table of Contents
      5.2.  Recommendations for Application Writers
      5.3.  Recommendation for Future Work
    6.  A Note on Port Mapping
-   7.  Security Considerations
-   8.  Acknowledgements
-   9.  References
-     9.1.  Normative References
-     9.2.  Informative References
+   7.  Application Layer Gateways
+   8.  Security Considerations
+   9.  Acknowledgements
+   10. References
+     10.1.  Normative References
+     10.2.  Informative References
    Appendix A.  Why GSE?
    Appendix B.  Verification Code
    Authors' Addresses
@@ -896,7 +897,16 @@ Table of Contents
    mapping in IPv6, NPTv6 Translators that comply with this
    specification MUST NOT perform port mapping.
 
-7.  Security Considerations
+7.  Application Layer Gateways
+
+   As explainined in [RFC5382] and [RFC4787] Application Layer Gateways
+   (ALGs) interfer with UNSAF [RFC3424] methods or protocols that try to
+   be NAT-aware and must therefore be used with caution.
+
+   If an NPTv6 Translator includes ALGs, it is RECOMMENDED that all of
+   those ALGs be disabled by default.
+
+8.  Security Considerations
 
    When NPTv6 is deployed using either of the two-way, algorithmic
    mappings defined in this document, it allows direct inbound
@@ -932,7 +942,7 @@ Table of Contents
    would be valuable to test interactions of NPTv6 with various aspects
    of current-day IKEv2/IPsec NAT traversal.
 
-8.  Acknowledgements
+9.  Acknowledgements
 
    The checksum-neutral algorithmic address mapping described in this
    document is based on email written by Iljtsch van Beijnum.
@@ -943,9 +953,9 @@ Table of Contents
    Jari Arkko, Keith Moore, Mark Townsley, Merike Kaeo, Ralph Droms,
    Remi Despres, Steve Blake, and Tony Hain.
 
-9.  References
+10.  References
 
-9.1.  Normative References
+10.1.  Normative References
 
    [RFC4193]  Hinden, R. and B. Haberman, "Unique Local IPv6 Unicast
               Addresses", RFC 4193, DOI 10.17487/RFC4193, October 2005,
@@ -975,7 +985,7 @@ Table of Contents
               UDP", BCP 127, RFC 4787, DOI 10.17487/RFC4787, January
               2007, <https://www.rfc-editor.org/info/rfc4787>.
 
-9.2.  Informative References
+10.2.  Informative References
 
    [GSE]      O'Dell, M., "GSE - An Alternate Addressing Architecture
               for IPv6", February 1997.
@@ -1091,6 +1101,11 @@ Table of Contents
               J., and E. Lear, "Address Allocation for Private
               Internets", BCP 5, RFC 1918, DOI 10.17487/RFC1918,
               February 1996, <https://www.rfc-editor.org/info/rfc1918>.
+
+   [RFC5382]  Guha, S., Ed., Biswas, K., Ford, B., Sivakumar, S., and P.
+              Srisuresh, "NAT Behavioral Requirements for TCP", BCP 142,
+              RFC 5382, DOI 10.17487/RFC5382, October 2008,
+              <https://www.rfc-editor.org/info/rfc5382>.
 
 Appendix A.  Why GSE?
 
