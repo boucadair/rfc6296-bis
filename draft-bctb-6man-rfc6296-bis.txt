@@ -4,13 +4,13 @@
 
 6MAN                                                           M. Cullen
 Internet-Draft                                         Painless Security
-Updates: 6296 (if approved)                                     F. Baker
+Obsoletes: 6296 (if approved)                                   F. Baker
 Intended status: Informational                              Unaffiliated
-Expires: 2 June 2024                                            O. Troan
+Expires: 6 June 2024                                            O. Troan
                                                            Cisco Systems
                                                              N. Buraglio
                                                  Energy Sciences Network
-                                                        30 November 2023
+                                                         4 December 2023
 
 
           RFC 6296bis IPv6-to-IPv6 Network Prefix Translation
@@ -47,7 +47,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 2 June 2024.
+   This Internet-Draft will expire on 6 June 2024.
 
 Copyright Notice
 
@@ -1518,19 +1518,23 @@ Authors' Addresses
 
    Margaret Cullen
    Painless Security
+   United States of America
    Email: mrcullen42@gmail.com
 
 
    Fred Baker
    Unaffiliated
+   United States of America
    Email: fredbaker.ietf@gmail.com
 
 
    Ole Troan
    Cisco Systems
+   Norway
    Email: otroan@cisco.com
 
 
    Nick Buraglio
    Energy Sciences Network
+   United States of America
    Email: buraglio@forwardingplane.net
