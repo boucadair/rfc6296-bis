@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-03T01:16:51.466696+00:00",
+  "timestamp": "2023-12-05T01:14:11.498344+00:00",
   "repo": "buraglio/rfc6296-bis",
   "labels": [
     {
@@ -55,16 +55,24 @@
       "id": "I_kwDOKR0JGs5zM31k",
       "title": "ICMPv6 error proxy",
       "url": "https://github.com/buraglio/rfc6296-bis/issues/1",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "otroan",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "To pass an ICMPv6 error message, the NPTv6 node needs to also translate the embedded IPv6 packet.\r\nThis would be an IPv6 variant of section 4 RFC5508.\r\nI haven't found other documents describing IPv6 NAT ICMP error handling.",
       "createdAt": "2023-10-09T10:25:01Z",
-      "updatedAt": "2023-10-09T10:25:01Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2023-12-04T08:11:43Z",
+      "closedAt": "2023-12-04T08:11:42Z",
+      "comments": [
+        {
+          "author": "otroan",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Added in revision -01.",
+          "createdAt": "2023-12-04T08:11:43Z",
+          "updatedAt": "2023-12-04T08:11:43Z"
+        }
+      ]
     },
     {
       "number": 3,
@@ -111,14 +119,54 @@
       "id": "I_kwDOKR0JGs54fcbi",
       "title": "Obsoletes not Updates",
       "url": "https://github.com/buraglio/rfc6296-bis/issues/9",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "becarpenter",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "This is a replacement for RFC 6296 so it should be Obsoletes: 6296",
       "createdAt": "2023-12-01T20:01:56Z",
-      "updatedAt": "2023-12-01T20:02:10Z",
+      "updatedAt": "2023-12-04T08:11:19Z",
+      "closedAt": "2023-12-04T08:11:18Z",
+      "comments": [
+        {
+          "author": "otroan",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Fixed in revision -02.",
+          "createdAt": "2023-12-04T08:11:18Z",
+          "updatedAt": "2023-12-04T08:11:18Z"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "I_kwDOKR0JGs54mKYB",
+      "title": "Add implementation considerations section (RFC7942)",
+      "url": "https://github.com/buraglio/rfc6296-bis/issues/10",
+      "state": "OPEN",
+      "author": "otroan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "From Brian's suggestions",
+      "createdAt": "2023-12-04T08:12:35Z",
+      "updatedAt": "2023-12-04T08:12:35Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 11,
+      "id": "I_kwDOKR0JGs54mMYL",
+      "title": "Addressing text and ALG considerations section",
+      "url": "https://github.com/buraglio/rfc6296-bis/issues/11",
+      "state": "OPEN",
+      "author": "otroan",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Remove \"at the mercy of\" and \"misuse\".\r\n\r\nI imagine that pushback will continue. In order to make the discussion rational rather than emotional, I think the \"NPTv6 Applicability\" section needs major work. There are generalisations like \"similar ALGs may be required for these applications to work through NPTv6 Translators\" and \"creates complexity for DNS deployment... 'split DNS', which may add complexity to network configuration\". I think that text needs to specify the necessary mitigations and give normative references.\r\n\r\nSimilarly the paragraph about ULAs is very tentative and needs to be much clearer. And its final sentence:\r\n\r\n\"Also, using any other global-scope address format makes one either obtain a PI prefix or be at the mercy of the agency from which it was allocated.\"\r\n\r\nseems wrong. Candidates to use NPTv6 seem unlikely to pay for a PI prefix, because they can multihome anyway. And you might get away with \"at the mercy of\" in an Experimental RFC, but surely not on the standards track.\r\n",
+      "createdAt": "2023-12-04T08:17:44Z",
+      "updatedAt": "2023-12-04T08:17:44Z",
       "closedAt": null,
       "comments": []
     }
