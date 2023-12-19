@@ -6,11 +6,11 @@
 Internet-Draft                                         Painless Security
 Obsoletes: 6296 (if approved)                                   F. Baker
 Intended status: Informational                              Unaffiliated
-Expires: 8 June 2024                                            O. Troan
+Expires: 21 June 2024                                           O. Troan
                                                            Cisco Systems
                                                              N. Buraglio
                                                  Energy Sciences Network
-                                                         6 December 2023
+                                                        19 December 2023
 
 
           RFC 6296bis IPv6-to-IPv6 Network Prefix Translation
@@ -47,7 +47,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 8 June 2024.
+   This Internet-Draft will expire on 21 June 2024.
 
 Copyright Notice
 
@@ -96,11 +96,19 @@ Table of Contents
      5.3.  Recommendation for Future Work
    6.  A Note on Port Mapping
    7.  Application Layer Gateways
-   8.  Security Considerations
-   9.  Acknowledgements
-   10. References
-     10.1.  Normative References
-     10.2.  Informative References
+   8.  Implementation Status
+     8.1.  fd.io VPP
+     8.2.  Cisco
+     8.3.  VyOS
+     8.4.  Linux
+     8.5.  OPNsense
+     8.6.  Palo Alto Networks
+     8.7.  Juniper
+   9.  Security Considerations
+   10. Acknowledgements
+   11. References
+     11.1.  Normative References
+     11.2.  Informative References
    Appendix A.  Why GSE?
    Appendix B.  Verification Code
    Authors' Addresses
@@ -907,7 +915,77 @@ Table of Contents
 
    It is RECOMMENDED that an NPTv6 translator does not include ALGs.
 
-8.  Security Considerations
+8.  Implementation Status
+
+8.1.  fd.io VPP
+
+   The fd.io Vector Packet Processing (VPP) project has implemented
+   NPTv6 as described in this document.  The implementation is available
+   in the fd.io VPP project's git repository at
+   https://git.fd.io/vpp/tree/src/plugins/npt66
+
+   The implementation is considered to be in the "beta" stage of
+   maturity.
+
+   It is licensed under the Apache License, Version 2.0.  Last updated:
+   2023-12-19.
+
+8.2.  Cisco
+
+   Cisco has implemented NPTv6 as described in this document in IOS-XE
+   and IOS-XR.  The implementation is considered to be in the
+   "production" stage of maturity.
+
+   It is licensed under the Cisco Systems, Inc. Software License
+   Agreement.  Last updated: 2023-12-19.
+
+8.3.  VyOS
+
+   VyOS has implemented NPTv6 as described in this document since VyOS
+   1.2 (Crux).  The implementation is considered to be in the
+   "production" stage of maturity.  More info can be found at
+   https://vyos.io.
+
+   It is licensed under the GNU General Public License version 2.  Last
+   updated: 2023-12-19.
+
+8.4.  Linux
+
+   Linux has implemented NPTv6 as described in this document since
+   kernel 3.14.  The implementation is considered to be in the
+   "production" stage of maturity.
+
+   It is licensed under the GNU General Public License version 2.  Last
+   updated: 2023-12-19.
+
+8.5.  OPNsense
+
+   OPNsense has implemented NPTv6 as described in this document since
+   version 18.1.  The implementation is considered to be in the
+   "production" stage of maturity.
+
+   It is licensed under the 2-clause BSD license.  Last updated:
+   2023-12-19.
+
+8.6.  Palo Alto Networks
+
+   Palo Alto Networks has implemented NPTv6 as described in this
+   document since PAN-OS 8.0.  The implementation is considered to be in
+   the "production" stage of maturity.
+
+   It is licensed under the Palo Alto Networks End User License
+   Agreement.  Last updated: 2023-12-19.
+
+8.7.  Juniper
+
+   Juniper has implemented NPTv6 as described in this document since
+   Junos 15.1.  The implementation is considered to be in the
+   "production" stage of maturity.
+
+   It is licensed under the Juniper End User License Agreement.  Last
+   updated: 2023-12-19.
+
+9.  Security Considerations
 
    When NPTv6 is deployed using either of the two-way, algorithmic
    mappings defined in this document, it allows direct inbound
@@ -943,7 +1021,7 @@ Table of Contents
    would be valuable to test interactions of NPTv6 with various aspects
    of current-day IKEv2/IPsec NAT traversal.
 
-9.  Acknowledgements
+10.  Acknowledgements
 
    The checksum-neutral algorithmic address mapping described in this
    document is based on email written by Iljtsch van Beijnum.
@@ -954,9 +1032,9 @@ Table of Contents
    Jari Arkko, Keith Moore, Mark Townsley, Merike Kaeo, Ralph Droms,
    Remi Despres, Steve Blake, and Tony Hain.
 
-10.  References
+11.  References
 
-10.1.  Normative References
+11.1.  Normative References
 
    [RFC4193]  Hinden, R. and B. Haberman, "Unique Local IPv6 Unicast
               Addresses", RFC 4193, DOI 10.17487/RFC4193, October 2005,
@@ -986,7 +1064,7 @@ Table of Contents
               UDP", BCP 127, RFC 4787, DOI 10.17487/RFC4787, January
               2007, <https://www.rfc-editor.org/info/rfc4787>.
 
-10.2.  Informative References
+11.2.  Informative References
 
    [GSE]      O'Dell, M., "GSE - An Alternate Addressing Architecture
               for IPv6", February 1997.
