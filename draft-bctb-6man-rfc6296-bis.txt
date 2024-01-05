@@ -6,11 +6,11 @@
 Internet-Draft                                         Painless Security
 Obsoletes: 6296 (if approved)                                   F. Baker
 Intended status: Informational                              Unaffiliated
-Expires: 21 June 2024                                           O. Troan
+Expires: 8 July 2024                                            O. Troan
                                                            Cisco Systems
                                                              N. Buraglio
                                                  Energy Sciences Network
-                                                        19 December 2023
+                                                          5 January 2024
 
 
           RFC 6296bis IPv6-to-IPv6 Network Prefix Translation
@@ -47,11 +47,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 June 2024.
+   This Internet-Draft will expire on 8 July 2024.
 
 Copyright Notice
 
-   Copyright (c) 2023 IETF Trust and the persons identified as the
+   Copyright (c) 2024 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -91,7 +91,7 @@ Table of Contents
      4.3.  NAT Behavioral Requirements
    5.  Implications for Applications
      5.1.  Recommendation for Network Planners Considering Use of
-           NPTv6
+           NPTv6 Translation
      5.2.  Recommendations for Application Writers
      5.3.  Recommendation for Future Work
    6.  A Note on Port Mapping
@@ -104,6 +104,8 @@ Table of Contents
      8.5.  OPNsense
      8.6.  Palo Alto Networks
      8.7.  Juniper
+     8.8.  Mikrotik RouterOS
+     8.9.  IPFW
    9.  Security Considerations
    10. Acknowledgements
    11. References
@@ -843,8 +845,7 @@ Table of Contents
       names are appropriate to use in which contexts.
 
 5.1.  Recommendation for Network Planners Considering Use of NPTv6
-
-     Translation
+      Translation
 
    In light of the above, network planners considering the use of NPTv6
    translation should carefully consider the kinds of applications that
@@ -907,10 +908,10 @@ Table of Contents
 
 7.  Application Layer Gateways
 
-   As explainined in [RFC5382] and [RFC4787] Application Layer Gateways
-   (ALGs) interfer with UNSAF [RFC3424] methods or protocols that try to
-   be NAT-aware.  NPTv6 is designed to be transport layer agnostic and
-   an ALG would be incompatible with this design and the checksum-
+   As explained in [RFC5382] and [RFC4787] Application Layer Gateways
+   (ALGs) interfere with UNSAF [RFC3424] methods or protocols that try
+   to be NAT-aware.  NPTv6 is designed to be transport layer agnostic
+   and an ALG would be incompatible with this design and the checksum-
    neutral mapping.
 
    It is RECOMMENDED that an NPTv6 translator does not include ALGs.
@@ -984,6 +985,24 @@ Table of Contents
 
    It is licensed under the Juniper End User License Agreement.  Last
    updated: 2023-12-19.
+
+8.8.  Mikrotik RouterOS
+
+   Mikrotik RouterOS has implemented NPTv6 functionality as described in
+   this document since RouterOS 7.1.  The implementation is considered
+   to be in the "production" stage of maturity.
+
+   It is licensed under the Mikrotik End User License Agreement.  Last
+   Updated: 2024-01-04
+
+8.9.  IPFW
+
+   FreeBSD and other compatible systems have implemented NPTv6
+   functionality as described in this document as part of the IPFW
+   toolkit since 2018.
+
+   It is licensed under the 2-clause BSD license.  Last updated:
+   2024-01-04.
 
 9.  Security Considerations
 
