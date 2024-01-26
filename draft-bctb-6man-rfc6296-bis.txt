@@ -5,12 +5,12 @@
 6MAN                                                           M. Cullen
 Internet-Draft                                         Painless Security
 Obsoletes: 6296 (if approved)                                   F. Baker
-Intended status: Informational                              Unaffiliated
-Expires: 8 July 2024                                            O. Troan
+Intended status: Standards Track                            Unaffiliated
+Expires: 29 July 2024                                           O. Troan
                                                            Cisco Systems
                                                              N. Buraglio
                                                  Energy Sciences Network
-                                                          5 January 2024
+                                                         26 January 2024
 
 
           RFC 6296bis IPv6-to-IPv6 Network Prefix Translation
@@ -47,7 +47,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 8 July 2024.
+   This Internet-Draft will expire on 29 July 2024.
 
 Copyright Notice
 
