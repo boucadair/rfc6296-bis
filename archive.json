@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-01-25T01:16:01.166475+00:00",
+  "timestamp": "2024-01-28T01:13:38.536644+00:00",
   "repo": "buraglio/rfc6296-bis",
   "labels": [
     {
@@ -143,15 +143,15 @@
       "id": "I_kwDOKR0JGs54mKYB",
       "title": "Add implementation considerations section (RFC7942)",
       "url": "https://github.com/buraglio/rfc6296-bis/issues/10",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "otroan",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "From Brian's suggestions",
       "createdAt": "2023-12-04T08:12:35Z",
-      "updatedAt": "2023-12-04T08:12:35Z",
-      "closedAt": null,
+      "updatedAt": "2024-01-26T09:45:31Z",
+      "closedAt": "2024-01-26T09:45:31Z",
       "comments": []
     },
     {
@@ -159,15 +159,15 @@
       "id": "I_kwDOKR0JGs54mMYL",
       "title": "Addressing text and ALG considerations section",
       "url": "https://github.com/buraglio/rfc6296-bis/issues/11",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "otroan",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Remove \"at the mercy of\" and \"misuse\".\r\n\r\nI imagine that pushback will continue. In order to make the discussion rational rather than emotional, I think the \"NPTv6 Applicability\" section needs major work. There are generalisations like \"similar ALGs may be required for these applications to work through NPTv6 Translators\" and \"creates complexity for DNS deployment... 'split DNS', which may add complexity to network configuration\". I think that text needs to specify the necessary mitigations and give normative references.\r\n\r\nSimilarly the paragraph about ULAs is very tentative and needs to be much clearer. And its final sentence:\r\n\r\n\"Also, using any other global-scope address format makes one either obtain a PI prefix or be at the mercy of the agency from which it was allocated.\"\r\n\r\nseems wrong. Candidates to use NPTv6 seem unlikely to pay for a PI prefix, because they can multihome anyway. And you might get away with \"at the mercy of\" in an Experimental RFC, but surely not on the standards track.\r\n",
       "createdAt": "2023-12-04T08:17:44Z",
-      "updatedAt": "2023-12-04T08:17:44Z",
-      "closedAt": null,
+      "updatedAt": "2024-01-26T09:45:43Z",
+      "closedAt": "2024-01-26T09:45:43Z",
       "comments": []
     }
   ],
